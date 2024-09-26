@@ -4,6 +4,4 @@
 
 (deftest a-test
   (testing "First test example"
-    (is (= (lab-21 (fn [x] x) 1) 0.8))))
-
-(a-test)
+    (is (= (time (lab-21 (fn [x] x) 1)) 0.5))))
