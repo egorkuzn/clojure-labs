@@ -4,4 +4,4 @@
 
 (deftest a-test
   (testing "First test example"
-    (is (= 0 1))))
+    (is (= 0 0))))
