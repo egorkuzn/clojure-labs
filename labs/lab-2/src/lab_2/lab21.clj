@@ -101,13 +101,19 @@
   ([f-t x h]
    (lab-21-integral false f-t x h)))
 
+(def mem-v1-reduce-fun-no-mem
+  [result f-t step h]
+  (+ result (common-delta-no-mem-with-x-zero-no-mem false f-t step h)))
+
+(def mem-v1-reduce-fun-mem (memoize mem-v1-reduce-fun-no-mem))
+
 (defn lab-21-integral-mem-v1
   ([f-t x]
    (lab-21-integral-mem-v1 f-t x 0.05))
   ([f-t x h] (if (> x 0.0)
                (let [n (quot x h)]
                  (reduce
-                  (fn [result step] (+ result (common-delta-no-mem-with-x-zero-mem false f-t step h)))
+                  (fn [result step] (mem-v1-reduce-fun-mem result f-t step h))
                   0.0
                   (reverse (range 0 n))))
                0.0)))

@@ -164,6 +164,35 @@
      (time (lab-21-integral-mem-v1 line 11.0))
      (range 1 10))))
 
+(deftest time-consuming-polynom-4-degree-delta-h 
+  (testing "Проверка работы без memoization polynom-4-degree-delta-h "
+    (println "-delta-h Без мемоизации polynom-4-degree:")
+    (reduce
+     (fn [expected x] (let [actual (time (lab-21-integral-no-mem polynom-4-degree (+ 11.0 x)))]
+                        actual))
+     (time (lab-21-integral-no-mem polynom-4-degree 10.0))
+     (map
+      (fn [elem] (* elem 0.05))
+      (range 1 10))))
+  (testing "Проверка работы memoization polynom-4-degree-delta-h "
+    (println "-delta-h С мемоизацией polynom-4-degree:")
+    (reduce
+     (fn [expected x] (let [actual (time (lab-21-integral-mem polynom-4-degree (+ 11.0 x)))]
+                        actual))
+     (time (lab-21-integral-mem polynom-4-degree 10.0))
+     (map
+      (fn [elem] (* elem 0.05))
+      (range 1 10))))
+  (testing "Проверка работы memoization V1 polynom-4-degree-delta-h "
+    (println "-delta-h С мемоизацией V1 polynom-4-degree:")
+    (reduce
+     (fn [expected x] (let [actual (time (lab-21-integral-mem-v1 polynom-4-degree (+ 11.0 x)))]
+                        actual))
+     (time (lab-21-integral-mem-v1 polynom-4-degree 10.0))
+     (map
+      (fn [elem] (* elem 0.05))
+      (range 1 10)))))
+
 
 ;; (deftest value-result-test
 ;;   (testing "Проверка значения вычисления интеграла mem"
