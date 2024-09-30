@@ -118,6 +118,53 @@
      (range 1 10))))
 
 
+(deftest time-consuming-const-fun-fixed
+  (testing "ФИКСИРОВАНО Проверка работы без memoization const-fun"
+    (println "ФИКСИРОВАНО Без мемоизации: const-fun")
+    (reduce
+     (fn [expected x] (let [actual (time (lab-21-integral-no-mem const-fun 11.0))]
+                        actual))
+     (time (lab-21-integral-no-mem const-fun 11.0))
+     (range 1 10)))
+  (testing "ФИКСИРОВАНО Проверка работы memoization const-fun"
+    (println "ФИКСИРОВАНО С мемоизацией const-fun:")
+    (reduce
+     (fn [expected x] (let [actual (time (lab-21-integral-mem const-fun 11.0))]
+                        actual))
+     (time (lab-21-integral-mem const-fun 11.0))
+     (range 1 10)))
+  (testing "ФИКСИРОВАНО Проверка работы memoization V1 const-fun"
+    (println "ФИКСИРОВАНО С мемоизацией V1 const-fun:")
+    (reduce
+     (fn [expected x] (let [actual (time (lab-21-integral-mem-v1 const-fun 11.0))]
+                        actual))
+     (time (lab-21-integral-mem-v1 const-fun 11.0))
+     (range 1 10))))
+
+(deftest time-consuming-line-fixed
+  (testing "ФИКСИРОВАНО Проверка работы без memoization line"
+    (println "ФИКСИРОВАНО Без мемоизации: line")
+    (reduce
+     (fn [expected x] (let [actual (time (lab-21-integral-no-mem line 20.0))]
+                        actual))
+     (time (lab-21-integral-no-mem line 11.0))
+     (range 1 10)))
+  (testing "ФИКСИРОВАНО Проверка работы memoization line"
+    (println "ФИКСИРОВАНО С мемоизацией line:")
+    (reduce
+     (fn [expected x] (let [actual (time (lab-21-integral-mem line 20.0))]
+                        actual))
+     (time (lab-21-integral-mem line 11.0))
+     (range 1 10)))
+  (testing "ФИКСИРОВАНО Проверка работы memoization V1 line"
+    (println "ФИКСИРОВАНО С мемоизацией V1 line:")
+    (reduce
+     (fn [expected x] (let [actual (time (lab-21-integral-mem-v1 line 20.0))]
+                        actual))
+     (time (lab-21-integral-mem-v1 line 11.0))
+     (range 1 10))))
+
+
 ;; (deftest value-result-test
 ;;   (testing "Проверка значения вычисления интеграла mem"
 ;;     (is (= (lab-21-integral-mem const-fun 4.0) 4.0)))
