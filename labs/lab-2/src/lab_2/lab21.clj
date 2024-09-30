@@ -33,9 +33,11 @@
 (defn common-delta-no-mem-with-x-zero-no-mem
   [is-mem f-t step-number h]
   (let [x-zero (x-zero-calc is-mem step-number h)]
-    ((if false
+    ( if (>= step-number 0)
+     ((if false
        delta-mem
-       delta-no-mem) is-mem f-t x-zero h)))
+       delta-no-mem) is-mem f-t x-zero h)
+     0.0)))
 
 (def common-delta-no-mem-with-x-zero-mem
   (memoize common-delta-no-mem-with-x-zero-no-mem))
@@ -98,4 +100,15 @@
    (lab-21-integral false f-t x))
   ([f-t x h]
    (lab-21-integral false f-t x h)))
+
+(defn lab-21-integral-mem-v1
+  ([f-t x]
+   (lab-21-integral-mem-v1 f-t x 0.05))
+  ([f-t x h] (if (> x 0.0)
+               (let [n (quot x h)]
+                 (reduce
+                  (fn [result step] (+ result (common-delta-no-mem-with-x-zero-mem false f-t step h)))
+                  0.0
+                  (reverse (range 0 n))))
+               0.0)))
   

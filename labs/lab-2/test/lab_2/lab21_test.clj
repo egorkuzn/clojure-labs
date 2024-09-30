@@ -6,24 +6,38 @@
   (testing "Проверка работы без memoization"
     (println "Без мемоизации:")
     (reduce
-     (fn [expected x] (let [actual (time (lab-21-integral-no-mem polynom-4-degree (+ 10.0 x)))] 
+     (fn [expected x] (let [actual (time (lab-21-integral-no-mem polynom-4-degree 20.0))] 
                         actual))
-     (time (lab-21-integral-no-mem const-fun 10.0))
+     (time (lab-21-integral-no-mem const-fun 20.0))
      (range 1 20))))
 
-(deftest time-consuming-test-mem
+(deftest time-consuming-test-mem-v1
   (testing "Проверка работы memoization"
     (println "С мемоизацией:")
     (reduce
-     (fn [expected x] (let [actual (time (lab-21-integral-mem polynom-4-degree (+ 10.0 x) 0.1))] 
+     (fn [expected x] (let [actual (time (lab-21-integral-mem polynom-4-degree 20.0))]
                         actual))
-     (time (lab-21-integral-mem const-fun 10.0))
+     (time (lab-21-integral-mem const-fun 20.0))
      (range 1 20))))
 
+;; (deftest time-consuming-test-mem
+;;   (testing "Проверка работы memoization V1"
+;;     (println "С мемоизацией V1:")
+;;     (reduce
+;;      (fn [expected x] (let [actual (time (lab-21-integral-mem polynom-4-degree 100.0))]
+;;                         actual))
+;;      (time (lab-21-integral-mem const-fun 100.0))
+;;      (range 1 20))))
 
-;; (deftest value-result-test
-;;   (testing "Проверка значения вычисления интеграла"
-;;     (is (= (lab-21-integral-mem line 9.0) 40.5))))
+
+(deftest value-result-test
+  (testing "Проверка значения вычисления интеграла mem"
+    (is (= (lab-21-integral-mem const-fun 4.0) 4.0)))
+  (testing "Проверка значения вычисления интеграла mem V1"
+    (is (= (lab-21-integral-mem-v1 const-fun 4.0) 4.0)))
+  (testing "Проверка значения вычисления интеграла no mem"
+    (is (= (lab-21-integral-no-mem const-fun 4.0) 4.0)))
+  )
 
 ;; (deftest calc-in-partioning-dot
 ;;   (testing "Проверка неопределенного поведения в точке 0 - разрыва гиперболы"
