@@ -2,7 +2,9 @@
 
 (defn trapezoid-space-no-mem
   [a b h]
-  (* (/ (+ a b) 2.0) h))
+  (let []
+    (Thread/sleep 2)
+   (* (/ (+ a b) 2.0) h)))
 
 (def trapezoid-space-mem (memoize trapezoid-space-no-mem))
 
@@ -34,7 +36,7 @@
   [is-mem f-t step-number h]
   (let [x-zero (x-zero-calc is-mem step-number h)]
     ( if (>= step-number 0)
-     ((if false
+     ((if is-mem
        delta-mem
        delta-no-mem) is-mem f-t x-zero h)
      0.0)))
@@ -101,7 +103,7 @@
   ([f-t x h]
    (lab-21-integral false f-t x h)))
 
-(def mem-v1-reduce-fun-no-mem
+(defn mem-v1-reduce-fun-no-mem
   [result f-t step h]
   (+ result (common-delta-no-mem-with-x-zero-no-mem false f-t step h)))
 
