@@ -4,26 +4,25 @@
 
 (defn delta-fun 
   [f-t step h]
-  ())
+  (
+   let [
+        a (f-t (* step h))
+        b (f-t (* (inc step) h))
+   ]
+   (lab21/trapezoid-space-no-mem a b h)
+  ))
 
 (defn lazy-integral-seq 
-  [f-t]
-  (iterate 
-   (fn [[step result]]
-     ([(inc step)
-       (+ result (delta-fun f-t step h))])) 
-   [0 0]))
+  [with-mem f-t h n]
+  (get (nth (iterate
+        (fn [[result step]]
+          [(+ result (lab21/common-delta-no-mem-with-x-zero-no-mem with-mem f-t step h))
+           (inc step)])
+        [0 0.0])
+       n) 0))
 
 (defn lab-22
   "Оптимизировано с помощью бесконечной последовательности частичных решений."
-  ([f-t x] (lab-22 f-t x 0.05))
-  ([f-t x h] (
-              (let [seq (lazy-integral-seq f-t)]
-                (fn [x]
-                  (nth seq (quot x h))))
-   )))
-
-(def fib (map
-          first 
-          (iterate (fn [[a b]] [b (+' a b)]) 
-                   [0 1])))
+  ([with-mem f-t x] (lab-22 with-mem f-t x 0.05))
+  ([with-mem f-t x h] (let [n (quot x h)]
+               (lazy-integral-seq with-mem f-t h n))))
