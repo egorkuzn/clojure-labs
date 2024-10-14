@@ -13,16 +13,18 @@
   ))
 
 (defn lazy-integral-seq 
-  [with-mem f-t h n]
-  (get (nth (iterate
-        (fn [[result step]]
-          [(+ result (lab21/common-delta-no-mem-with-x-zero-no-mem with-mem f-t step h))
-           (inc step)])
-        [0 0.0])
-       n) 0))
+  [is-mem f-t h n]
+  (iterate
+   (fn [[result step]]
+     [(+ result (lab21/common-delta-no-mem-with-x-zero-no-mem is-mem f-t step h))
+      (inc step)])
+   [0 0.0]))
 
 (defn lab-22
   "Оптимизировано с помощью бесконечной последовательности частичных решений."
-  ([with-mem f-t x] (lab-22 with-mem f-t x 0.05))
-  ([with-mem f-t x h] (let [n (quot x h)]
-               (lazy-integral-seq with-mem f-t h n))))
+  ([is-mem f-t x] (lab-22 is-mem f-t x 0.05))
+  ([is-mem f-t x h] (let [n (quot x h)
+                          integral-seq (lazy-integral-seq is-mem f-t x h)]
+               (map
+                (fn [i] (get (time (nth integral-seq i)) 0))
+                (range 0 n)))))
