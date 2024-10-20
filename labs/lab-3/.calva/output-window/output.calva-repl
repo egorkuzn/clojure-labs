@@ -143,3 +143,234 @@ clj꞉lab-3.lab31꞉> 
 clj꞉lab-3.lab31꞉> 
 #'lab-3.lab31/lab-31
 clj꞉lab-3.lab31꞉> 
+#'lab-3.lab31-test/test-poly-lazy-no-mem
+clj꞉lab-3.lab31-test꞉> 
+; Syntax error compiling at (src/lab_3/lab31.clj:46:29).
+; Unable to resolve symbol: % in this context
+clj꞉lab-3.lab31꞉> 
+#'lab-3.lab31/batch-count
+clj꞉lab-3.lab31꞉> 
+#'lab-3.lab31/part-of
+clj꞉lab-3.lab31꞉> 
+#'lab-3.lab31/lab-31
+clj꞉lab-3.lab31꞉> 
+; Syntax error compiling at (src/lab_3/lab31.clj:46:29).
+; Unable to resolve symbol: % in this context
+clj꞉lab-3.lab31꞉> 
+nil
+clj꞉lab-3.lab31꞉> 
+#'lab-3.lab31/batch-count
+clj꞉lab-3.lab31꞉> 
+#'lab-3.lab31/part-of
+clj꞉lab-3.lab31꞉> 
+#'lab-3.lab31/lab-31
+clj꞉lab-3.lab31꞉> 
+; Syntax error compiling at (src/lab_3/lab31.clj:46:29).
+; Unable to resolve symbol: % in this context
+clj꞉lab-3.lab31꞉> 
+#'lab-3.lab31/lab-31-parallel-map
+clj꞉lab-3.lab31꞉> 
+; "Elapsed time: 102.96175 msecs"
+(1 2 3 4 5 6 7 8 9 10)
+clj꞉lab-3.lab31꞉> 
+; Syntax error compiling at (src/lab_3/lab31.clj:46:29).
+; Unable to resolve symbol: % in this context
+clj꞉lab-3.lab31꞉> 
+; Syntax error compiling at (src/lab_3/lab31.clj:37:16).
+; Unable to resolve symbol: i in this context
+clj꞉lab-3.lab31꞉> 
+; Syntax error compiling at (src/lab_3/lab31.clj:37:16).
+; Unable to resolve symbol: % in this context
+clj꞉lab-3.lab31꞉> 
+; Syntax error compiling at (src/lab_3/lab31.clj:36:22).
+; Unable to resolve symbol: i in this context
+clj꞉lab-3.lab31꞉> 
+#'lab-3.lab31/lab-31
+clj꞉lab-3.lab31꞉> 
+; Syntax error compiling at (src/lab_3/lab31.clj:49:29).
+; Unable to resolve symbol: % in this context
+clj꞉lab-3.lab31꞉> 
+; Execution error (ClassCastException) at lab-3.lab31/lab-31 (form-init1202711904974484408.clj:33).
+; class clojure.lang.Iterate cannot be cast to class clojure.lang.IFn (clojure.lang.Iterate and clojure.lang.IFn are in unnamed module of loader 'app')
+clj꞉lab-3.lab31꞉> 
+; Syntax error compiling at (src/lab_3/lab31.clj:36:22).
+; Can't take value of a macro: #'clojure.core/future
+clj꞉lab-3.lab31꞉> 
+#'lab-3.lab31/lab-31
+clj꞉lab-3.lab31꞉> 
+; Execution error (ClassCastException) at lab-3.lab31/lab-31 (form-init1202711904974484408.clj:33).
+; class clojure.lang.Iterate cannot be cast to class clojure.lang.IFn (clojure.lang.Iterate and clojure.lang.IFn are in unnamed module of loader 'app')
+clj꞉lab-3.lab31꞉> 
+#'lab-3.lab31/lab-31
+clj꞉lab-3.lab31꞉> 
+; Execution error (ClassCastException) at lab-3.lab31/lab-31 (form-init1202711904974484408.clj:33).
+; class clojure.lang.Iterate cannot be cast to class clojure.lang.IFn (clojure.lang.Iterate and clojure.lang.IFn are in unnamed module of loader 'app')
+clj꞉lab-3.lab31꞉> 
+; Execution error (ClassCastException) at lab-3.lab31/lab-31 (form-init1202711904974484408.clj:33).
+; class clojure.lang.Iterate cannot be cast to class clojure.lang.IFn (clojure.lang.Iterate and clojure.lang.IFn are in unnamed module of loader 'app')
+clj꞉lab-3.lab31꞉> 
+; Execution error (ClassCastException) at lab-3.lab31/lab-31 (form-init1202711904974484408.clj:33).
+; class clojure.lang.Iterate cannot be cast to class clojure.lang.IFn (clojure.lang.Iterate and clojure.lang.IFn are in unnamed module of loader 'app')
+clj꞉lab-3.lab31꞉> 
+; Execution error (ClassCastException) at lab-3.lab31/lab-31 (form-init1202711904974484408.clj:33).
+; class clojure.lang.Iterate cannot be cast to class clojure.lang.IFn (clojure.lang.Iterate and clojure.lang.IFn are in unnamed module of loader 'app')
+clj꞉lab-3.lab31꞉> 
+#'lab-3.lab31/lab-31
+clj꞉lab-3.lab31꞉> 
+; Execution error (ClassCastException) at lab-3.lab31/lab-31 (form-init1202711904974484408.clj:33).
+; class clojure.lang.Iterate cannot be cast to class clojure.lang.IFn (clojure.lang.Iterate and clojure.lang.IFn are in unnamed module of loader 'app')
+clj꞉lab-3.lab31꞉> 
+; Execution error (ClassCastException) at lab-3.lab31/lab-31 (form-init1202711904974484408.clj:33).
+; class clojure.lang.Iterate cannot be cast to class clojure.lang.IFn (clojure.lang.Iterate and clojure.lang.IFn are in unnamed module of loader 'app')
+clj꞉lab-3.lab31꞉> 
+#'lab-3.lab31/lab-31
+clj꞉lab-3.lab31꞉> 
+; Execution error (ClassCastException) at lab-3.lab31/lab-31 (form-init1202711904974484408.clj:33).
+; class clojure.lang.Iterate cannot be cast to class clojure.lang.IFn (clojure.lang.Iterate and clojure.lang.IFn are in unnamed module of loader 'app')
+clj꞉lab-3.lab31꞉> 
+; Execution error (ClassCastException) at lab-3.lab31/lab-31 (form-init1202711904974484408.clj:33).
+; class clojure.lang.Iterate cannot be cast to class clojure.lang.IFn (clojure.lang.Iterate and clojure.lang.IFn are in unnamed module of loader 'app')
+clj꞉lab-3.lab31꞉> 
+#'lab-3.lab31/lab-31
+clj꞉lab-3.lab31꞉> 
+; Execution error (ClassCastException) at lab-3.lab31/lab-31 (form-init1202711904974484408.clj:33).
+; class clojure.lang.Iterate cannot be cast to class clojure.lang.IFn (clojure.lang.Iterate and clojure.lang.IFn are in unnamed module of loader 'app')
+clj꞉lab-3.lab31꞉> 
+#'lab-3.lab31/lab-31
+clj꞉lab-3.lab31꞉> 
+; Execution error (ClassCastException) at lab-3.lab31/lab-31 (form-init1202711904974484408.clj:33).
+; class clojure.lang.Iterate cannot be cast to class clojure.lang.IFn (clojure.lang.Iterate and clojure.lang.IFn are in unnamed module of loader 'app')
+clj꞉lab-3.lab31꞉> 
+#'lab-3.lab31/lab-31
+clj꞉lab-3.lab31꞉> 
+; Execution error (ClassCastException) at lab-3.lab31/lab-31 (form-init1202711904974484408.clj:33).
+; class clojure.lang.Iterate cannot be cast to class clojure.lang.IFn (clojure.lang.Iterate and clojure.lang.IFn are in unnamed module of loader 'app')
+clj꞉lab-3.lab31꞉> 
+#'lab-3.lab31/lab-31
+clj꞉lab-3.lab31꞉> 
+; Execution error (ClassCastException) at lab-3.lab31/lab-31 (form-init1202711904974484408.clj:33).
+; class clojure.lang.Iterate cannot be cast to class clojure.lang.IFn (clojure.lang.Iterate and clojure.lang.IFn are in unnamed module of loader 'app')
+clj꞉lab-3.lab31꞉> 
+; Syntax error compiling at (src/lab_3/lab31.clj:29:1).
+; Can't take value of a macro: #'clojure.core/let
+clj꞉lab-3.lab31꞉> 
+#'lab-3.lab31/part-of
+clj꞉lab-3.lab31꞉> 
+#'lab-3.lab31/lab-31
+clj꞉lab-3.lab31꞉> 
+; Execution error (ClassCastException) at lab-3.lab31/lab-31 (form-init1202711904974484408.clj:32).
+; class clojure.lang.Iterate cannot be cast to class clojure.lang.IFn (clojure.lang.Iterate and clojure.lang.IFn are in unnamed module of loader 'app')
+clj꞉lab-3.lab31꞉> 
+#'lab-3.lab31-test/test-parallel-filter
+clj꞉lab-3.lab31-test꞉> 
+#'lab-3.lab31-test/test-parallel-filter
+clj꞉lab-3.lab31-test꞉> test-parallel-filter
+#function[lab-3.lab31-test/test-parallel-filter]
+clj꞉lab-3.lab31-test꞉> (test-parallel-filter)
+; test parallel filter
+; "Elapsed time: 0.179833 msecs"
+; (2 4 6 8)
+nil
+clj꞉lab-3.lab31-test꞉> (test-parallel-filter)
+; test parallel filter
+; "Elapsed time: 0.025458 msecs"
+; (2 4 6 8)
+nil
+clj꞉lab-3.lab31-test꞉> 
+#'lab-3.lab31-test/test-parallel-filter
+clj꞉lab-3.lab31-test꞉> (test-parallel-filter)
+; test parallel filter
+; 
+; ERROR in (test-parallel-filter) (form-init1202711904974484408.clj:32)
+; Uncaught exception, not in assertion.
+; expected: nil
+;   actual: java.lang.ClassCastException: class clojure.lang.Iterate cannot be cast to class clojure.lang.IFn (clojure.lang.Iterate and clojure.lang.IFn are in unnamed module of loader 'app')
+;  at lab_3.lab31$lab_31.invokeStatic (form-init1202711904974484408.clj:32)
+;     lab_3.lab31$lab_31.invoke (form-init1202711904974484408.clj:29)
+;     lab_3.lab31_test$fn__10978.invokeStatic (form-init1202711904974484408.clj:8)
+;     lab_3.lab31_test/fn (form-init1202711904974484408.clj:5)
+;     clojure.test$test_var$fn__9856.invoke (test.clj:717)
+;     clojure.test$test_var.invokeStatic (test.clj:717)
+;     clojure.test$test_var.invoke (test.clj:708)
+;     lab_3.lab31_test$test_parallel_filter.invokeStatic (form-init1202711904974484408.clj:5)
+;     lab_3.lab31_test$test_parallel_filter.invoke (form-init1202711904974484408.clj:5)
+;     lab_3.lab31_test$eval10987.invokeStatic (form-init1202711904974484408.clj:281)
+;     lab_3.lab31_test$eval10987.invoke (form-init1202711904974484408.clj:281)
+;     clojure.lang.Compiler.eval (Compiler.java:7194)
+;     clojure.lang.Compiler.eval (Compiler.java:7149)
+;     clojure.core$eval.invokeStatic (core.clj:3215)
+;     clojure.core$eval.invoke (core.clj:3211)
+;     nrepl.middleware.interruptible_eval$evaluate$fn__1363$fn__1364.invoke (interruptible_eval.clj:87)
+;     clojure.lang.AFn.applyToHelper (AFn.java:152)
+;     clojure.lang.AFn.applyTo (AFn.java:144)
+;     clojure.core$apply.invokeStatic (core.clj:667)
+;     clojure.core$with_bindings_STAR_.invokeStatic (core.clj:1990)
+;     clojure.core$with_bindings_STAR_.doInvoke (core.clj:1990)
+;     clojure.lang.RestFn.invoke (RestFn.java:425)
+;     nrepl.middleware.interruptible_eval$evaluate$fn__1363.invoke (interruptible_eval.clj:87)
+;     clojure.main$repl$read_eval_print__9206$fn__9209.invoke (main.clj:437)
+;     clojure.main$repl$read_eval_print__9206.invoke (main.clj:437)
+;     clojure.main$repl$fn__9215.invoke (main.clj:458)
+;     clojure.main$repl.invokeStatic (main.clj:458)
+;     clojure.main$repl.doInvoke (main.clj:368)
+;     clojure.lang.RestFn.invoke (RestFn.java:1523)
+;     nrepl.middleware.interruptible_eval$evaluate.invokeStatic (interruptible_eval.clj:84)
+;     nrepl.middleware.interruptible_eval$evaluate.invoke (interruptible_eval.clj:56)
+;     nrepl.middleware.interruptible_eval$interruptible_eval$fn__1396$fn__1400.invoke (interruptible_eval.clj:152)
+;     clojure.lang.AFn.run (AFn.java:22)
+;     nrepl.middleware.session$session_exec$main_loop__1466$fn__1470.invoke (session.clj:218)
+;     nrepl.middleware.session$session_exec$main_loop__1466.invoke (session.clj:217)
+;     clojure.lang.AFn.run (AFn.java:22)
+;     java.lang.Thread.run (Thread.java:1570)
+nil
+clj꞉lab-3.lab31-test꞉> 
+#'lab-3.lab31-test/test-parallel-filter
+clj꞉lab-3.lab31-test꞉> (test-parallel-filter)
+; test parallel filter
+; "Elapsed time: 0.09475 msecs"
+; (2 4 6 8)
+nil
+clj꞉lab-3.lab31-test꞉> 
+#'lab-3.lab31-test/test-parallel-filter
+clj꞉lab-3.lab31-test꞉> (test-parallel-filter)
+; test parallel filter
+; (7 8)
+; "Elapsed time: 0.121541 msecs"
+; (2 4 6 8)
+nil
+clj꞉lab-3.lab31-test꞉> 
+; Syntax error compiling at (src/lab_3/lab31.clj:36:17).
+; Unable to resolve symbol: % in this context
+clj꞉lab-3.lab31꞉> 
+#'lab-3.lab31/lab-31
+clj꞉lab-3.lab31꞉> 
+#'lab-3.lab31-test/test-parallel-filter
+clj꞉lab-3.lab31-test꞉> 
+#'lab-3.lab31-test/test-parallel-filter
+clj꞉lab-3.lab31-test꞉> 
+; Execution error (ClassCastException) at lab-3.lab31/lab-31 (form-init1202711904974484408.clj:32).
+; class clojure.lang.Iterate cannot be cast to class clojure.lang.IFn (clojure.lang.Iterate and clojure.lang.IFn are in unnamed module of loader 'app')
+clj꞉lab-3.lab31꞉> 
+#'lab-3.lab31/lab-31
+clj꞉lab-3.lab31꞉> 
+; Execution error (ArityException) at lab-3.lab31/lab-31 (form-init1202711904974484408.clj:34).
+; Wrong number of args (0) passed to: lab-3.lab31/lab-31/fn--11064
+clj꞉lab-3.lab31꞉> 
+#'lab-3.lab31/lab-31
+clj꞉lab-3.lab31꞉> 
+; Execution error (ArithmeticException) at lab-3.lab31/eval11080$fn (form-init1202711904974484408.clj:40).
+; Divide by zero
+clj꞉lab-3.lab31꞉> 
+; Execution error (ArithmeticException) at lab-3.lab31/eval11084$fn (form-init1202711904974484408.clj:40).
+; Divide by zero
+clj꞉lab-3.lab31꞉> 
+#'lab-3.lab31/lab-31
+clj꞉lab-3.lab31꞉> 
+; Execution error (ArithmeticException) at lab-3.lab31/eval11095$fn (form-init1202711904974484408.clj:40).
+; Divide by zero
+clj꞉lab-3.lab31꞉> 
+; (2 4 6 8)
+nil
+clj꞉lab-3.lab31꞉> 
+#'lab-3.lab31/lab-31
+clj꞉lab-3.lab31꞉> 
