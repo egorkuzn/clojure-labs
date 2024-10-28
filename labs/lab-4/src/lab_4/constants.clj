@@ -8,5 +8,15 @@
   (list ::constant val))
 
 (defn constant? [expr]
-  "проверка, константа ли приложение"
+  "проверка, константа ли выражение"
   (= (first expr) ::constant))
+
+(defn True? [expr]
+  "проверка, истина ли"
+  (and (constant? expr) (= (second expr) 1)))
+
+(defn False? [expr]
+  "проверка, ложь ли"
+  (and (constant? expr) (= (second expr) 0)))
+
+
