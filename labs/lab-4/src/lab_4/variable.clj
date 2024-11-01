@@ -1,5 +1,7 @@
 (ns lab-4.variable)
 
+; Переменные для определения выражений
+
 (defn variable [name]
   "создание переменной"
   {:pre [keyword? name]}
