@@ -1,0 +1,14 @@
+(ns lab-4.common-test
+  (:require [clojure.test :refer :all]
+            [lab-4.]
+            [lab-4.expression :refer :all]))
+
+(deftest test-expression-to-string
+  (testing 
+   "test-expression-to-string"
+    (println (expression-to-string 
+              (dnf-solver
+               (&& (variable :🍓) (variable :🫐))
+               (variable :😎)
+               (|| (variable :🌞) (variable :🌧️)))
+              ))))
